@@ -2,9 +2,9 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  // Force new build ID to ensure Vercel invalidates cache
+  // Force new build ID to ensure Vercel invalidates cache (Update 2)
   generateBuildId: async () => {
-    return `build-${Date.now()}`
+    return `build-${Date.now()}-v2`
   },
   eslint: {
     // Warning: This allows production builds to successfully complete even if
